@@ -1,0 +1,17 @@
+[Unit]
+Description=Abusee VPN Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/abusee-vpn-bot
+Environment="PATH=/opt/abusee-vpn-bot/venv/bin"
+ExecStart=/opt/abusee-vpn-bot/venv/bin/python /opt/abusee-vpn-bot/bot.py
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

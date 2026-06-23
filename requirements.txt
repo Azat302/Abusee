@@ -1,0 +1,14 @@
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+sqlalchemy==2.0.35
+asyncpg==0.30.0
+aiosqlite==0.20.0
+pydantic==2.9.2
+pydantic-settings==2.6.0
+httpx==0.28.1
+python-dotenv==1.0.1
+python-telegram-bot==21.5
+python-telegram-bot[job-queue]==21.5
+APScheduler==3.10.4
+pytz==2026.2
+tzlocal==5.3.1
